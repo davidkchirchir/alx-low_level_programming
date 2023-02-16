@@ -7,6 +7,7 @@
  */
 int main(void)
 {
-	printf("with proper grammar, but the outcome is a piece of art,\n");
-	return (0);
+	const char message[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	write(STDERR_FILENO, message, sizeof(message) - 1);
+	return (1);
 }
