@@ -9,8 +9,7 @@
  */
 int main(void)
 {
-	srand(time(NULL));
-	int n = rand() - RAND_MAX / 2;
+	int n = rand() ;
 
 	printf("%d ", n);
 
