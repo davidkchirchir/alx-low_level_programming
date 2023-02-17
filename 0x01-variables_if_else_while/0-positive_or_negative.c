@@ -9,9 +9,10 @@
  */
 int main(void)
 {
-	int n = rand() ;
+	int n;
 
-	printf("%d ", n);
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
 
 	if (n > 0)
 	{
@@ -25,5 +26,5 @@ int main(void)
 	{
 		printf("is negative\n");
 	}
-		return (0);
+	return (0);
 }
