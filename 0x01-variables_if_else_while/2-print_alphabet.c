@@ -5,7 +5,7 @@
 /**
  *main - In this program, we use a for loop to iterate over the ASCII codes
  *for the lowercase letters from 'a' to 'z'.
- *Return : Always 0 (Succss)
+ *Return: Always 0 (Succss)
  */
 int main(void)
 {
