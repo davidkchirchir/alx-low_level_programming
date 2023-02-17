@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
  *main - In this program, we use a for loop to iterate over number 1 to 9
