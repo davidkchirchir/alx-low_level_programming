@@ -15,7 +15,7 @@ int main(void)
 	{
 		putchar(n + '0');
 	}
-	for (n = 10; n <= 16; n++)
+	for (n = 10; n <= 15; n++)
 	{
 		putchar(n - 10 + 'a');
 	}
