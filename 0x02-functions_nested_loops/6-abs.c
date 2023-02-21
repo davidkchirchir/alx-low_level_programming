@@ -1,12 +1,19 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * _abs - return absolute figure of n
+ *@n : is the integer whose absolute in returned
  *
- * Return: Always 0 (Success)
+ * Return: n or  -n
  */
-int main(void)
+int _abs(int n)
 {
-	puts("\"Programming is like building a multilingual puzzle");
-	return (0);
+	if (n < 0)
+	{
+		return (-n);
+	}
+	else
+	{
+		return (n);
+	}
 }
