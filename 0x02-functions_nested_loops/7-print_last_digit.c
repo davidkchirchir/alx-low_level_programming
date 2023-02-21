@@ -1,12 +1,14 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Entry point
+ * print_last_digit - returns last digit of n
+ *@n : is the integer whose last digit is returned
  *
- * Return: Always 0 (Success)
+ * Return: n or  -n
  */
-int main(void)
+void print_last_digit(int n)
 {
-	puts("\"Programming is like building a multilingual puzzle");
-	return (0);
+	int last_digit = _abs(n) % 10;
+
+	return (last_digit);
 }
