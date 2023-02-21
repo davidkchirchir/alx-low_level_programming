@@ -5,8 +5,15 @@
  *
  * Return: void (Success)
  */
-int main(void)
+
+void print_alphabet(void)
 {
-	puts("\"Programming is like building a multilingual puzzle");
-	return (0);
+	char letter;
+
+	for (letter = 'a'; letter <= 'z'; letter++)
+	{
+		_putchar(letter);
+
+	}
+	_putchar('\n');
 }
