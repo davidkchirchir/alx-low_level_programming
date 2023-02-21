@@ -1,12 +1,24 @@
-#include <stdio.h>
-
+#include "main.h"
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
-int main(void)
+*jack_bauer - prints time in 24 hour formtat
+*
+*Return:returns 0
+*/
+void jack_bauer(void)
 {
-	puts("\"Programming is like building a multilingual puzzle");
-	return (0);
+	int min, hour;
+	
+	for (hour = 0; hour <= 23; hour++)
+	{
+		for (min = 0; min <= 59; min++)
+		{
+			_putchar((hour / 10) + '0');
+			_putchar((hour % 10) + '0');
+			_putchar(':');
+			_putchar((min / 10) + '0');
+			_putchar((min % 10) + '0');
+			_putchar(10);
+		}
+	}
+
 }
