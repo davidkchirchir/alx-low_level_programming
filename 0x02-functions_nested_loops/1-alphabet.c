@@ -1,9 +1,9 @@
-#include <main.h>
+#include "main.h"
 
 /**
- * main - Entry point
+ * prints a-z lowercase alphabet
  *
- * Return: Always 0 (Success)
+ * Return: void (Success)
  */
 int main(void)
 {
