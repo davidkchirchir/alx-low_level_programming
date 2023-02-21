@@ -16,6 +16,6 @@ int main(void)
 	{
 		_putchar(str[i]);
 	}
-	putchar(len);
+	_putchar(len);
 	return (0);
 }
