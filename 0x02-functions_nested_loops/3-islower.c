@@ -2,18 +2,17 @@
 
 /**
  * _islower - check if letter is lowercase
- *
- * Return: 1 (Success)
- * Return: 0 (Failure)
+ *@c : is a character and functions argument
+ * Return: 1 (Success) or 2 (Failure)
  */
 int _islower(int c)
 {
 	if (c >= 'a' && c <= 'z')
 	{
-		return(1);
+		return (1);
 	}
 	else
 	{
-		return(0);
+		return (0);
 	}
 }
