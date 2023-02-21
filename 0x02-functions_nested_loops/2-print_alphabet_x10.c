@@ -1,12 +1,22 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Entry point
+ * print_alphabet - prints a-z lowercase alphabet
  *
- * Return: Always 0 (Success)
+ * Return: void
  */
-int main(void)
+
+void print_alphabet(void)
 {
-	puts("\"Programming is like building a multilingual puzzle");
-	return (0);
+	char letter;
+	int i;
+
+	for (i = 0; i < 10; i++)
+	{
+		for (letter = 'a'; letter <= 'z'; letter++)
+		{
+			_putchar(letter);
+
+		}
+		_putchar('\n');
 }
