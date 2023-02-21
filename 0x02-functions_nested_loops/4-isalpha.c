@@ -1,12 +1,18 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * _isalpha - check if letter is lowercase or uppercase
+ *@c : is a character and functions argument
+ * Return: 1 for uppercase or 0 for lowercase
  */
-int main(void)
+int _isalphai(int c)
 {
-	puts("\"Programming is like building a multilingual puzzle");
-	return (0);
+	if (c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z')
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }
