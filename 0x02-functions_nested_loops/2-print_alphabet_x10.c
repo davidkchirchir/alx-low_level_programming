@@ -2,7 +2,7 @@
 
 
 /**
- * print_alphabet - prints a-z lowercase alphabet
+ * print_alphabet_x10 - prints a-z lowercase alphabet 10 times
  *
  * Return: void
  */
