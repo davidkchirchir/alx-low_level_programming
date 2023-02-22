@@ -1,11 +1,10 @@
 #include <stdio.h>
 
 /**
-*main - this prints prints the sum of multiples of 3
-*and 5 below 1024
-*Return : return 0
+*main - prints the sum of all multiples of
+*3 or 5 that are below 1024
+*Return: return 0
 */
-
 int main(void)
 {
 	int sum_of_multiples = 0;
