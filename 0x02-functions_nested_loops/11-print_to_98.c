@@ -1,12 +1,30 @@
+#include "main.h"
 #include <stdio.h>
 
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
-int main(void)
+*print_to_98 - prints natural
+*numbers from n to 98
+*@n:integer to start by
+*return: returns nothing
+*/
+
+void print_to_98(int n)
 {
-	puts("\"Programming is like building a multilingual puzzle");
-	return (0);
+	int i;
+
+	if (n <= 98)
+	{
+		for (i = n; i < 98; i++)
+		{
+			printf("%d, ", i);
+		}
+	}
+	else
+	{
+		for (i = n; i > 98; i--)
+		{
+			printf("%d, ", i);
+		}
+	}
+	printf("98\n");
 }
