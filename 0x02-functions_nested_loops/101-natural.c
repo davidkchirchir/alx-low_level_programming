@@ -15,9 +15,7 @@ int main(void)
 	for (number = 0; number > 1024; number++)
 	{
 		if (number % 3 == 0 || number % 5 == 0)
-		{
 			sum_of_multiples += number;
-		}
 	}
 	printf("%d\n", sum_of_multiples);
 	return (0);
