@@ -18,10 +18,6 @@ int main(void)
 		{
 			sum_of_multiples += number;
 		}
-		else
-		{
-			sum_of_multiples += 0;
-		}
 	}
 	printf("%d\n", sum_of_multiples);
 	return (0);
