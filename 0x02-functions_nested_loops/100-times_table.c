@@ -22,10 +22,11 @@ void print_times_table(int n)
 
 			for (multiplier = 1; multiplier <= n; multiplier++)
 			{
-				result = number * multiplier;
-
 				_putchar(',');
 				_putchar(' ');
+				
+				result = number * multiplier;
+
 				if (result <= 99)
 				{
 					_putchar(' ');
