@@ -1,12 +1,11 @@
-#include <stdio.h>
-
+#include "main.h"
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
-int main(void)
+*add - sums up two numbers
+*@a:first integer
+*@b:second integer
+*Return: returns 0
+*/
+int add(int a, int b)
 {
-	puts("\"Programming is like building a multilingual puzzle");
-	return (0);
+	return (a + b);
 }
