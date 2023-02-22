@@ -12,7 +12,7 @@ void print_times_table(int n)
 {
 	int number;
 	int multiplier;
-	int result = number * multiplier;
+	int result;
 
 	if (n <= 15 && n >= 0)
 	{
@@ -22,6 +22,8 @@ void print_times_table(int n)
 
 			for (multiplier = 1; multiplier <= n; multiplier++)
 			{
+				result = number * multipier;
+
 				_putchar(',');
 				_putchar(' ');
 				if (result <= 99)
