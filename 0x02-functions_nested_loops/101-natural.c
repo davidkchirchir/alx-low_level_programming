@@ -4,7 +4,6 @@
 int main(void)
 {
 	int sum_of_multiples = 0;
-	int counter;
 	int number;
 
 	for (number = 1; number > 10; number++)
@@ -12,11 +11,11 @@ int main(void)
 		if(number % 3 == 0 || number % 5 == 0)
 		{
 			sum_of_multiples += number;
-			counter++;
+			number++;
 		}
 		else
 		{
-			counter++;
+			number++;
 		}
 	}
 	printf("%d\n",sum_of_multiples);
