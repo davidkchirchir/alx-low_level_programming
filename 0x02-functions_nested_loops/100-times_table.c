@@ -11,7 +11,7 @@
 void print_times_table(int n)
 {
 	int number;
-	int multiplieriplier;
+	int multiplier;
 	int result = number * multiplier;
 
 	if (n <= 15 && n >= 0)
