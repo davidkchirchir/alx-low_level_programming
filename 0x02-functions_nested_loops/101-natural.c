@@ -19,5 +19,5 @@ int main(void)
 			counter++
 		}
 	}
-	printf("%d",sum_of_multiples);
+	printf("%d\n",sum_of_multiples);
 }
