@@ -16,7 +16,7 @@ int main(void)
 		}
 		else
 		{
-			counter++
+			counter++;
 		}
 	}
 	printf("%d\n",sum_of_multiples);
