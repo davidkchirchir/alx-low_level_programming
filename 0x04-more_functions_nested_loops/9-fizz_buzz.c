@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-*main - program that prints either number
+*main - program that prints either numberber
 *or fizz or buzz or fizzBuzz
 *
 *
@@ -8,22 +8,22 @@
 */
 int main(void)
 {
-	int num;
+	int number;
 
-	while (num++ < 100)
-		if ((num % 3 == 0) && (num % 5 == 0))
+	while (number++ < 100)
+		if ((number % 3 == 0) && (number % 5 == 0))
 			printf("FizzBuzz ");
-		else if ((num % 3) == 0)
+		else if ((number % 3) == 0)
 			printf("Fizz ");
-		else if ((num % 5) == 0)
+		else if ((number % 5) == 0)
 		{
-			if (num != 100)
+			if (number != 100)
 				printf("Buzz ");
 			else
 				printf("Buzz");
 		}
 		else
-			printf("%d ", num);
+			printf("%d ", number);
 	printf("\n");
 	return (0);
 }
