@@ -30,6 +30,6 @@ int main(void)
 		factor++;
 	}
 	printf("%ld\n", largest_factor);
-	return 0;
+	return (0);
 }
 
