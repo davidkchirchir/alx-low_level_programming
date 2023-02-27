@@ -39,15 +39,15 @@ int _strlen(char *s)
 }
 
 /**
-*swap_int - swaps two integers
+*swap_char - swaps two integers
 *@a: first integer
 *@b: second integer
 *Return: nothing is returned
 */
 
-void swap_char(int *a, int *b)
+void swap_char(char *a, char *b)
 {
-	int tmp = *a;
+	char tmp = *a;
 
 	*a = *b;
 	*b = tmp;
