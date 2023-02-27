@@ -7,16 +7,15 @@
 *Return: dest
 */
 
-char *_strcpy(char *dest, const char *src)
+char *_strcpy(char *dest, char *src)
 {
-	char *dest_start = dest;
+	int i = 0;
 
-	while (*src != '\0')
+	while (*(src + i) != '\0')
 	{
-		*dest = *src;
-		dest++;
-		src++;
+		*(dest + i) = *(src + i);
+		i++;
 	}
-	*dest = '\0';
-	return dest_start;
+	*(dest + i) = '\0';
+	return (dest);
 }
