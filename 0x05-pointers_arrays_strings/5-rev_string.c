@@ -45,7 +45,7 @@ int _strlen(char *s)
 *Return: nothing is returned
 */
 
-void swap_int(int *a, int *b)
+void swap_char(int *a, int *b)
 {
 	int tmp = *a;
 
