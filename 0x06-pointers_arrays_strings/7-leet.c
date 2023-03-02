@@ -11,14 +11,14 @@ char *leet(char *str)
 	int j;
 	char leet[8] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
 
-	while (str[++index1])
+	while (str[++i])
 	{
-		for (index2 = 0; index2 <= 7; index2++)
+		for (j = 0; j <= 7; j++)
 		{
-			if (str[index1] == leet[index2] ||
-					str[index1] - 32 == leet[index2])
+			if (str[i] == leet[j] ||
+					str[i] - 32 == leet[j])
 			{
-				str[index1] = index2 + '0';
+				str[i] = j + '0';
 			}
 		}
 	}
