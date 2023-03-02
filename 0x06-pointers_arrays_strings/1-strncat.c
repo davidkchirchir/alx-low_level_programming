@@ -10,22 +10,21 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-	int i;
-	int j;
+	char *dest_end = dest;
 
-	i = 0;
-	while (dest[i] != '\0')
+	/*Find the end of destination string */
+	while (*dest_end != '\0')
 	{
-		i++;
+		dest_end++;
 	}
-
-	while (src[j] != '\0' && j < n)
+	/*Append the source string to the destination string */
+	while (*src != '\0' && *dest_end < n)
 	{
-		dest[i] = src[j];
-		i++;
-		j++;
+		*dest_end = *src;
+		dest_end++;
+		src++;
 	}
-
-	dest[i] = '\0';
+	/*Add terminating null byte to the end to the concatenated string */
+	*dest_end = '\0';
 	return (dest);
 }
