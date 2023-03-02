@@ -11,16 +11,13 @@
 
 char *_strcat(char *dest, char *src)
 {
-	// Find the end of the destination string
-
 	char *dest_end = dest;
 
+	/*Find the end of destination string */
 	while (*dest_end != '\0')
 	{
 		dest_end++;
 	}
-
-	// Append the source string to the destination string 
 
 	while (*src != '\0')
 	{
@@ -29,9 +26,6 @@ char *_strcat(char *dest, char *src)
 		src++;
 	}
 
-	// Add a terminating null byte to the end of the concatenanted string 
-
-	*dest_end = '\0';
-
+	*dest_end = '\0';	
 	return (dest);
 }
