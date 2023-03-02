@@ -18,7 +18,7 @@ char *_strncat(char *dest, char *src, int n)
 		dest_end++;
 	}
 	/*Append the source string to the destination string */
-	while (*src != '\0' && *dest_end < n)
+	while (*src != '\0' && (*src && *dest_end) < n)
 	{
 		*dest_end = *src;
 		dest_end++;
