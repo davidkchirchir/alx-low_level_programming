@@ -18,9 +18,9 @@ void print_chessboard(char (*a)[8])
 			putchar(a[row][col]);
 			if (col != 7)
 			{
-				putchar(' ');
+				_putchar(' ');
 			}
 		}
-		putchar('\n');
+		_putchar('\n');
 	}
 }
