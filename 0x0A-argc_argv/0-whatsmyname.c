@@ -12,6 +12,6 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 {
 	char *program_name = strrchr(argv[0], '/');
 
-	printf("%s\n", (program_name != NULL ? program_name + 1 : argv[0]));
+	printf("%s\n",argv[0]);
 	return (0);
 }
