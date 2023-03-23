@@ -2,22 +2,34 @@
 #include <stdio.h>
 #include <stdarg.h>
 
+/**
+ * print_all - prints a list of arguments of different data types
+ *
+ * @format: list of types of arguments to be printed
+ *          c: char
+ *          i: integer
+ *          f: float
+ *          s: string
+ *          any other character: ignore
+ *
+ * Return: void
+ */
 void print_all(const char * const format, ...)
 {
 	va_list args;
-	va_start(args, format);
-
-	int i = 0;
-	char c;
+	int i;
 	char *s;
+	char c;
 	float f;
 
-	while (format != NULL && format[i] != '\0')
+	va_start(args, format);
+
+	while (*format != '\0')
 	{
-		switch (format[i])
+		switch (*format)
 		{
 			case 'c':
-				c = (char) va_arg(args, int);
+				c = va_arg(args, int);
 				printf("%c", c);
 				break;
 			case 'i':
@@ -25,32 +37,20 @@ void print_all(const char * const format, ...)
 				printf("%d", i);
 				break;
 			case 'f':
-				f = (float) va_arg(args, double);
+				f = va_arg(args, double);
 				printf("%f", f);
 				break;
 			case 's':
 				s = va_arg(args, char *);
-				if (s == NULL)
-				{
-					printf("(nil)");
-				}
-				else
-				{
-					printf("%s", s);
-				}
+				printf("%s", (s == NULL) ? "(nil)" : s);
 				break;
 			default:
 				break;
 		}
-
-		if (format[i + 1] != '\0' && (format[i] == 'c' || format[i] == 'i' || format[i] == 'f' || format[i] == 's'))
-		{
+		format++;
+		if (*format && *(format + 1))
 			printf(", ");
-		}
-		i++;
 	}
-
 	printf("\n");
 	va_end(args);
 }
-
