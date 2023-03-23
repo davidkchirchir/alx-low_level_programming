@@ -21,12 +21,13 @@ void print_all(const char * const format, ...)
 	char *s;
 	char c;
 	float f;
+	const char *pformat = format;
 
 	va_start(args, format);
 
-	while (*format != '\0')
+	while (*pformat != '\0')
 	{
-		switch (*format)
+		switch (*pformat)
 		{
 			case 'c':
 				c = va_arg(args, int);
@@ -47,8 +48,8 @@ void print_all(const char * const format, ...)
 			default:
 				break;
 		}
-		format++;
-		if (*format && *(format + 1))
+		pformat++;
+		if (*pformat && *(pformat + 1))
 			printf(", ");
 	}
 	printf("\n");
